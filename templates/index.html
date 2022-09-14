@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayur Asodara</title>
+
+    <!-- facebook opengraph -->
+    <meta property="og:title" content="Mayur Asodara" />
+    <meta
+      property="og:description"
+      content="I'm a Python and AI ML enthusiast"
+    />
+    <meta property="og:site_name" content="Mayur Asodara" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="" />
+
+    <!-- twitter cards -->
+    <meta name="twitter:site" content="@MayurAsodara" />
+    <meta name="twitter:title" content="Mayur Asodara" />
+    <meta name="twitter:creator" content="@MayurAsodara" />
+    <meta
+      name="twitter:description"
+      content="I'm a Python and AI ML enthusiast"
+    />
+    <meta name="twitter:img" content="/static/hero.jpg" />
+    <meta name="twitter:card" content="summary" />
+
+    <!--Styling-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97bbef3340.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <title>Mayur's Portfolio</title>
+  </head>
+  <body>
+    <div class="left">
+      <img class="left-img" src="static/hero.png" alt="picture of me" />
+    </div>
+    <div class="right">
+      <div id="Nav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          ><i class="fa-solid fa-xmark"></i
+        ></a>
+        <div class="overlay-content">
+          <a href="{{url_for('home')}}">Home</a>
+          <a href="{{ url_for('home')}}">About</a>
+          <a href="{{ url_for('home')}}">Portfolio</a>
+          <a href="{{ url_for('home')}}">Blogs</a>
+          <a href="{{ url_for('home')}}">Community</a>
+          <a href="{{ url_for('home')}}">Talks</a>
+          <a href="{{ url_for('home')}}">Work Experiences</a>
+          <a href="{{ url_for('home')}}"
+            >Awards, Achievements, and Certifications</a
+          >
+          <hr />
+          <li>
+            <a href="https://www.linkedin.com/in/kolawole-precious-8723b2198/"
+              ><i class="fa-brands fa-linkedin-in fa-l"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/precillieo"
+              ><i class="fa-brands fa-twitter fa-l"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://precillieo.medium.com/"
+              ><i class="fa-brands fa-medium fa-l"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Precillieo"
+              ><i class="fa-brands fa-github fa-l"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://precillieo.hashnode.dev/"
+              ><i class="fa-brands fa-hashnode fa-l"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/precillieo/"
+              ><i class="fa-brands fa-instagram fa-l"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCRuQ2z4TapeyNBPx0WT8ZbA"
+              ><i class="fa-brands fa-youtube fa-l"></i
+            ></a>
+          </li>
+        </div>
+      </div>
+      <div class="menu">
+        <i class="fa-solid fa-bars fa-2xl" onclick="openNav()"></i>
+      </div>
+      <div class="container">
+        <h1>Mayur</h1>
+        <p>Hi, I am Mayur Asodara.</p>
+        <p>
+          Hi Everyone, I am Mayur Asodara. I am a Student of ECE at VGEC,
+          Ahmedabad.My field of Interest's are building new Web Technologies and
+          Products and also in areas related to Artificial Intelligence and
+          Machine Learning.
+        </p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/kolawole-precious-8723b2198/"
+            ><i class="fa-brands fa-linkedin-in fa-xl"></i
+          ></a>
+          <a href="https://twitter.com/precillieo"
+            ><i class="fa-brands fa-twitter fa-xl"></i
+          ></a>
+          <a href="https://precillieo.medium.com/"
+            ><i class="fa-brands fa-medium fa-xl"></i
+          ></a>
+          <a href="https://github.com/Precillieo"
+            ><i class="fa-brands fa-github fa-xl"></i
+          ></a>
+          <a href="https://precillieo.hashnode.dev/"
+            ><i class="fa-brands fa-hashnode fa-xl"></i
+          ></a>
+          <a href="https://www.instagram.com/precillieo/"
+            ><i class="fa-brands fa-instagram fa-xl"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UCRuQ2z4TapeyNBPx0WT8ZbA"
+            ><i class="fa-brands fa-youtube fa-xl"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script src="static/mains.js"></script>
+  </body>
+</html>
