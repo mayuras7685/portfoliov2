@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayur Asodara</title>
+
+    <!--Styling-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97bbef3340.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../static/style.css" />
+    <title>Mayur's Portfolio</title>
+  </head>
+  <body>
+    <div id="Nav" class="overlay">
+      <i class="fa-solid fa-xmark"></i
+      ></a>
+      <div class="overlay-content">
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{ url_for('about')}}">About</a>
+        <a href="{{ url_for('projects')}}">Projects</a>
+        <a href="{{ url_for('work')}}">Work Experiences</a>
+        <a href="{{ url_for('certi')}}">Certifications</a>
+        <hr />
+        <li>
+          <a href="https://www.linkedin.com/in/kolawole-precious-8723b2198/"
+            ><i class="fa-brands fa-linkedin-in fa-l"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/MayurAsodara"
+            ><i class="fa-brands fa-twitter fa-l"></i
+          ></a>
+        </li>
+
+        <li>
+          <a href="https://github.com/mayuras7685"
+            ><i class="fa-brands fa-github fa-l"></i
+          ></a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/mayur_7685/"
+            ><i class="fa-brands fa-instagram fa-l"></i
+          ></a>
+        </li>
+      </div>
+    </div>
+    <div class="menu">
+      <i class="fa-solid fa-bars fa-2xl" onclick="openNav()"></i>
+    </div>
+    {% block content %} {% endblock %}
+    <script src="../static/mains.js"></script>
+  </body>
+</html>
