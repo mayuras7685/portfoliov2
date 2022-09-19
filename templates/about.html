@@ -12,129 +12,194 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
     <script
       src="https://kit.fontawesome.com/97bbef3340.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" type="text/css" href="../static/styles/style.css" />
+    <link rel="stylesheet" href="../static/styles/about.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../static/styles/default.css"
+    />
     <title>About</title>
   </head>
   <body>
-    <h1>About-Page</h1>
+    
+    <div class="intro-wrapper">
+          <div class="nav-wrapper">
+            <!-- Link around dots-wrapper added after tutorial video -->
+            <a href="index.html">
+              <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+              </div>
+            </a>
 
-    <div class="about" style="overflow: auto">
-      <div style="float: left; margin-top: 7%">
-        <img src="static/about.jpg" />
+            <ul id="navigation">
+              <li><a href="{{url_for('about')}}">About |</a></li>
+              <li><a href="{{url_for('work')}}">Work |</a></li>
+              <li><a href="{{url_for('projects')}}">Projects |</a></li>
+              <li><a href="{{url_for('certi')}}">Certificates |</a></li>
+              <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+          </div>
+
+    <div class="container mt-2 mb-2 text-center">
+      <h1>Projects</h1>
+    </div>
+    <div
+      class="row row-cols-1 row-cols-md-3 g-4"
+      style="
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+      "
+    >
+      <div class="col">
+        <div class="card">
+          <img
+            src="../static/img/elixirthr.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Olympics data analysis</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+
+            <div class="github">
+              <a href="https://github.com/mayuras7685/Olympics-data-analysis"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div style="float: right; width: 50%">
-        <h1 style="color: rgb(255, 0, 97); font-size: 200%">
-          Hi, I am Precillieo
-        </h1>
-        <p>
-          I am an adept Data Scientist, proficient in Machine Learning, Deep
-          Learning, and Software Engineering for Data Science. I have a track
-          record of products and solutions in the industry and community. With
-          broad experience in Machine Learning, I am passionate about solving
-          various real-life problems by building end-to-end data science and
-          machine learning applications from data collection, exploratory
-          analysis, visualizations, predictive modeling to hosting and deploying
-          models on cloud.
-        </p>
-        <p>
-          It is also worth mentioning my ever-growing goals and aspirations. I
-          am a vision-driven individual trying to build necessary skills, get on
-          the right platforms (in terms of education and reach), make
-          large-scale impacts on people and societies by being able to solve
-          human problems and provide innovative solutions, with a strong focus
-          on the intersection of Artificial Intelligence and Healthcare.
-        </p>
-        <p>
-          Along the way, I am big on open-source dev, community mentorship,
-          meetups facilitation, speakership, technical writing, and passionate
-          about helping tech muggles find their feet.
-        </p>
+
+      <div class="col">
+        <div class="card">
+          <img
+            src="../static/img/healththr.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Blog-site</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+
+            <div class="github">
+              <a href="https://github.com/mayuras7685/flask-blog"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="../static/img/loanthr.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Happiness index for schools</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+
+            <div class="github">
+              <a
+                href="https://github.com/Precillieo/Outreachy-Internship-Final-Contribution"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img
+            src="../static/img/outreachthr.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Resume Genretor</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+
+            <div class="github">
+              <a
+                href="https://github.com/Precillieo/Outreachy-Internship-Final-Contribution"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  width="16"
+                  height="16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                  ></path></svg
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <hr style="width: 30%" />
-
-    <div class="skills">
-      <h2 style="text-align: center; color: rgb(255, 0, 97)">
-        Proficiency/Skills
-      </h2>
-      <p>
-        Data Science: Python, Pandas, Numpy, Matplotlib, Seaborn, Plotly,
-        Tableau, Streamlit
-      </p>
-      <p>Machine Learning: Scikit-learn, Tensorflow, Keras.</p>
-      <p>
-        Software Engineering: Data Structures and Algorithms, HTML, CSS, Flask,
-        Postgresql, SQLite, Docker, Sendgrid API, Twilio API.
-      </p>
-      <p>
-        Others: Git and GitHub, Jupyter Notebook, Cloud Computing with Heroku
-        and AWS, Technical Writing, Technical Presentation.
-      </p>
-    </div>
-    <br />
-    <hr style="width: 30%" />
-
-    <section class="card-links">
-      <section class="about-card-container">
-        <div class="about-card">
-          <img
-            src="/static/portfolio.jpg"
-            style="max-width: 100%; max-height: 300px"
-          />
-          <h2>Portfolio</h2>
-          <p>Cool stuff I've built</p>
-        </div>
-
-        <div class="about-card">
-          <img
-            src="/static/blog.jpg"
-            style="max-width: 100%; max-height: 300px"
-          />
-          <h2>Blog</h2>
-          <p>Technical articles I've written</p>
-        </div>
-
-        <div class="about-card">
-          <img
-            src="/static/talk.jpg"
-            style="max-width: 100%; max-height: 300px"
-          />
-          <h2>Talks</h2>
-          <p>I speak too</p>
-        </div>
-
-        <div class="about-card">
-          <img
-            src="/static/awards.jpg"
-            style="max-width: 100%; max-height: 300px; max-height: 50%"
-          />
-          <h2>Awards and Achievement</h2>
-          <p>Recognition for my work</p>
-        </div>
-
-        <div class="about-card">
-          <img
-            src="/static/work_experience.jpg"
-            style="max-width: 100%; max-height: 300px"
-          />
-          <h2>Work Experience</h2>
-          <p>Places I've worked.</p>
-        </div>
-
-        <div class="about-card">
-          <img
-            src="/static/community.jpg"
-            style="max-width: 100%; max-height: 300px"
-          />
-          <h2>Community</h2>
-          <p>Communities I help run</p>
-        </div>
-      </section>
-    </section>
+    <script src="../static/js/mains.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
