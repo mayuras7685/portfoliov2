@@ -21,9 +21,9 @@ def contact():
 def projects():
   return render_template('projects.html')
 
-@app.route("/work")
-def work():
-  return render_template('work.html')
+@app.route("/experience")
+def experience():
+  return render_template('experience.html')
 
 @app.route("/certi")
 def certi():
